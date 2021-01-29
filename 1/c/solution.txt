@@ -1,0 +1,24 @@
+Starts with B. 
+
+In this case, only if the second part has only As 
+will it be true that all letters of the first part 
+will be after all the letters of the second part.
+
+Since this is a permutation of the alphabet, the last letter must be A. 
+Now it must be arranged so that a 25 letter arrangement ending with B
+is a pat. For this to be true a 24 letter arrangement ending in " " must
+be a pat. This must be C, otherwise the letter arrangement would have C
+in the first half, and a letter after it in the second. Continuing the pattern:
+
+B...A
+B...C A
+B D...C A 
+Then it would go
+BDFHJLNPRTVXZYWUSQOMKIGECA
+and if I swap the middle two (ZY) for example, then it wouldn't work because the last
+arrangement would be YZ - which is not a pat. 
+
+Therefore there is only one possible arrangement.
+
+This has now been tested in the main.py program. True. Therefore there is 
+exactly 1 permutation of the alphabet beginning with B which is a pat. 

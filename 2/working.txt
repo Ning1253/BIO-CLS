@@ -1,0 +1,19 @@
+There will be up to 5000 moves. In this case - make a 5000 by 5000 grid.
+Since these are triangles, here are the options: 
+1. Move left or right on your row
+2. If the sum of your row and column is even(so every other square)
+move down
+3. If the sum of your row and column is odd
+move up. 
+Players move clockwise so to move "around" a filled triangle:
+
+If said triangle is an "even" one it points upwards. so if a player is on the left of it,
+they move first 2 spots to the right in the grid, then below the triangle in the grid,
+the go back to the spot on the left. 
+
+If it is an "odd" triangle they move firstly to the spot above it, then to the one 2 two the right of it,
+then to the one to the left. 
+
+If a triangle is already filled, then going around the edge is simply doing a second turn. Therefore each
+player will have its positioned notated by an edge.
+This will be a specific coordinate, and a number from 1 to 3, going clockwise around the triangle. 
